@@ -218,7 +218,7 @@ on to the next section.
 Now that we have written a `get_completion` function and understand how to work
 with it, let’s look at integrating the function into other parts of our app.
 
-Create a `[app.py](http://app.py)` file in the `playground-ai` folder and add
+Create a `app.py` file in the `playground-ai` folder and add
 the following code:
 
 ```python
