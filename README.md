@@ -21,8 +21,7 @@ parameters:
 - Context Aware Function.
 
 Before we start, comment out the `try-except` statement you added when testing
-the local environment. Your `[ai.py](http://ai.py)` file should look like the
-following:
+the local environment. Your `ai.py` file should look like the following:
 
 ```python
 import os
@@ -47,14 +46,14 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 ```
 
 This will prevent unnecessary calls to the API when importing functions from the
-`[ai.py](http://ai.py)` module in other modules.
+`ai.py` module in other modules.
 
 ## Basic Prompt Function
 
 We will start with the most basic function that can be used for a single prompt.
 The user will interact with the function through a CLI interface.
 
-Add the following function definition to your `[ai.py](http://ai.py)` file:
+Add the following function definition to your `ai.py` file:
 
 ```python
 def get_completion(prompt, model="gpt-3.5-turbo", temperature=0):
@@ -254,7 +253,7 @@ A context aware function allows you to pass in a list of messages as input. This
 enables us to keep track of the correspondence between the user and the AI
 assistant.
 
-Open the `[ai.py](http://ai.py)` file and add the following:
+Open the `ai.py` file and add the following:
 
 ```python
 def get_completion_from_messages(messages, model="gpt-3.5-turbo", temperature=0):
