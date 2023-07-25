@@ -269,7 +269,7 @@ def get_completion_from_messages(messages, model="gpt-3.5-turbo", temperature=0)
 Here’s what an example usage might look like:
 
 ```python
-messages=[
+messages = [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "Who won the world series in 2020?"},
         {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
